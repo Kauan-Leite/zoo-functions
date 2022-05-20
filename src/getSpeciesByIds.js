@@ -11,7 +11,7 @@ function getSpeciesByIds(...ids) {
   }
 
   const verifyID = () => (
-    data.species.filter((specie) => (specie.id === idA) || (specie.id === idB))
+    data.species.every((specie) => (specie.id === idA) || (specie.id === idB))
   );
   return verifyID();
 }
